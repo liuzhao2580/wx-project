@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+      "com-swiper": "/components/com-swiper/com-swiper",
+      "com-recommand": "./components/com-recommand/com-recommand"
+  },
+  "navigationBarTitleText": "首页",
+  "enablePullDownRefresh": true
+}

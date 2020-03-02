@@ -1,0 +1,10 @@
+/* components/com-swiper/com-swiper.wxss */
+.swiper-box {
+    height: 350rpx;
+}
+.swiper-item {
+    border-radius: 10rpx;
+}
+.swiper-box .swiper-image {
+    width: 100%;
+}

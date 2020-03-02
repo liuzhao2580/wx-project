@@ -1,0 +1,55 @@
+/* pages/tabbar/home/components/com-recommand/com-recommand.wxss */
+.recommand-hot {
+    padding: 20rpx 0;
+    position: relative;
+}
+.recommand-hot .more{
+    position: absolute;
+    bottom: 10rpx;
+    right: 10rpx;
+    padding: 10rpx 25rpx;
+    font-size: 24rpx;
+    border: 2rpx solid #ccc;
+    border-radius: 30rpx;
+}
+.recommand-info {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+.recommand-info::after{
+    content: "";
+    width: 30%;
+}
+.recommand-item {
+    width: 30.3%;
+    margin-bottom: 20rpx;
+}
+.recommand-item .recommand-image {
+    height: 320rpx;
+    position: relative
+}
+.recommand-image image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10rpx;
+}
+.recommand-image .play-info {
+    font-size: 22rpx;
+    color: #fff;
+    position: absolute;
+    top: 5rpx;
+    right: 8rpx;
+    height: 50rpx;
+}
+.play-info text:first-of-type {
+    margin-right: 10rpx;
+}
+.recommand-item .recommand-text {
+    font-size: 30rpx;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

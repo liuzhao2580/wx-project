@@ -1,0 +1,8 @@
+<!--miniprogram/pages/tabbar/home/home.wxml-->
+<view class="home-box">
+    <!-- 1.轮播图 -->
+    <com-swiper swiperItem="{{bannerData}}"/>
+    <!-- 2.热门推荐 -->
+    <com-recommand recommandItem="{{recommandData}}"/>
+</view>
+

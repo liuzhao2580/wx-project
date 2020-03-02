@@ -1,0 +1,30 @@
+{
+    "pages": [
+        "pages/tabbar/home/home",
+        "pages/tabbar/personal/personal",
+        "pages/songSheet/songSheet"
+    ],
+    "window": {
+        "backgroundColor": "#ffffff",
+        "navigationBarBackgroundColor": "#ff5333"
+    },
+    "tabBar": {
+        "selectedColor": "#ff5333",
+        "list": [
+            {
+                "pagePath": "pages/tabbar/home/home",
+                "text": "首页",
+                "iconPath": "/assets/images/tabbar/home.png",
+                "selectedIconPath": "/assets/images/tabbar/home-active.png"
+            },
+            {
+                "pagePath": "pages/tabbar/personal/personal",
+                "text": "个人中心",
+                "iconPath": "/assets/images/tabbar/personal.png",
+                "selectedIconPath": "/assets/images/tabbar/personal-active.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json",
+    "style": "v2"
+}
