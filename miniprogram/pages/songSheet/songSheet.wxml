@@ -1,2 +1,13 @@
 <!--pages/songSheet/songSheet.wxml-->
-<text>pages/songSheet/songSheet.wxml</text>
+<view class="songSheet-box">
+    <scroll-view scroll-x class="scroll-box" >
+        <block wx:for="{{head_title}}" wx:key="index">
+            <view class="{{index == isActive ? 'active' : ''}} scroll-item" data-currentindex="{{index}}"  bind:tap="itemTap">
+                <text class="item-text">{{item.label}}</text>
+            </view>
+        </block>
+    </scroll-view>
+    <view class="recommand-info">
+        <com-list recommandItem="{{recommandData}}" />
+    </view>
+</view>

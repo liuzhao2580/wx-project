@@ -1,0 +1,16 @@
+<view class="recommand-info">
+    <block wx:for="{{recommandItem}}" wx:key="index">
+        <view class="recommand-item">
+            <view class="recommand-image">
+                <image src="{{item.album_image}}"></image>
+                <view class="play-info">
+                    <text class="iconfont icon-erji"></text>
+                    <text>{{item.play_num}}</text>
+                </view>
+            </view>
+            <view class="recommand-text">
+                <text>{{item.album_introduce}}</text>
+            </view>
+        </view>
+    </block>
+</view>

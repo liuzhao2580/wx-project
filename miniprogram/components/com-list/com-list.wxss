@@ -1,17 +1,3 @@
-/* pages/tabbar/home/components/com-recommand/com-recommand.wxss */
-.recommand-hot {
-    padding: 20rpx 0;
-    position: relative;
-}
-.recommand-hot .more{
-    position: absolute;
-    bottom: 10rpx;
-    right: 10rpx;
-    padding: 10rpx 25rpx;
-    font-size: 24rpx;
-    border: 2rpx solid #ccc;
-    border-radius: 30rpx;
-}
 .recommand-info {
     display: flex;
     flex-flow: wrap;

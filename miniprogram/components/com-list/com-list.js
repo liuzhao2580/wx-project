@@ -1,4 +1,4 @@
-// pages/tabbar/home/components/com-recommand/com-recommand.js
+// components/com-list/com-list.js
 Component({
     /**
      * 组件的属性列表

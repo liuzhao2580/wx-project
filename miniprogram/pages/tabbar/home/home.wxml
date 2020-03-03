@@ -1,8 +1,15 @@
 <!--miniprogram/pages/tabbar/home/home.wxml-->
 <view class="home-box">
     <!-- 1.轮播图 -->
-    <com-swiper swiperItem="{{bannerData}}"/>
+    <com-swiper swiperItem="{{bannerData}}" />
     <!-- 2.热门推荐 -->
-    <com-recommand recommandItem="{{recommandData}}"/>
+    <view class="recommand-box">
+        <view class="recommand-hot">
+            <text class="hot">热门推荐</text>
+            <navigator class="more" open-type="navigate" url="/pages/songSheet/songSheet">
+                查看更多
+            </navigator>
+        </view>
+        <com-list recommandItem="{{recommandData}}" />
+    </view>
 </view>
-
