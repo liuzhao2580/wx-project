@@ -13,18 +13,27 @@
     position: fixed;
     z-index: 99999;
 }
+.scroll-view {
+    position: relative;
+}
 .scroll-item {
     display: inline-block;
     height: 60rpx;
     line-height: 60rpx;
     width: 120rpx;
     text-align: center;
+    color: #3c3c3c;
 }
-.scroll-item .item-text {
-    padding: 0 10rpx 10rpx;
+.active-line {
+    position: absolute;
+    width: 60rpx;
+    height: 5rpx;
+    bottom: 0;
+    background-color: #ff5333;
+    transition: all 0.3s;
 }
-.scroll-item.active .item-text{
-    border-bottom: 5rpx solid #ff5333;
+.scroll-item.active{
+    color: #ff5333;
 }
 .recommand-info {
     padding: 0 20rpx;

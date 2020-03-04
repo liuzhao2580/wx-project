@@ -29,7 +29,8 @@ Page({
                 label: "民谣"
             }
         ],
-        isActive: 0
+        isActive: 0,
+        left: ""
     },
     onLoad: function (options) {
         // 2. 热门推荐的数据
@@ -37,6 +38,7 @@ Page({
             this.setData({
                 recommandData: data
             })
+            this.changLine()
         })
     },
     itemTap(event) {
@@ -44,6 +46,17 @@ Page({
         const currentIndex = currentTarget.dataset.currentindex
         this.setData({
             isActive: currentIndex
+        })
+        this.changLine()
+    },
+    // tabs的下划线切换的动画效果
+    changLine() {
+        const query = wx.createSelectorQuery()
+        query.select(".active").boundingClientRect()
+        query.exec(res => {
+            this.setData({
+                left: res[0].left
+            })
         })
     }
 })
