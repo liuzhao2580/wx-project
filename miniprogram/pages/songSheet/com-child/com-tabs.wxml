@@ -1,0 +1,10 @@
+<scroll-view scroll-x class="scroll-box" scroll-left="{{scrollLeft}}" scroll-with-animation>
+    <view class="scroll-view">
+        <block wx:for="{{head_title}}" wx:key="index">
+            <view class="{{index == isActive ? 'active' : ''}} scroll-item" data-currentindex="{{index}}" bind:tap="itemTap">
+                {{item.label}}
+            </view>
+        </block>
+        <view class="active-line" style="transform:translateX({{left}}px) translateX(50%)"></view>
+    </view>
+</scroll-view>

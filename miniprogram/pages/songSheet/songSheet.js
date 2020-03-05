@@ -1,8 +1,11 @@
 // pages/songSheet/songSheet.js
 const db = wx.cloud.database()
+// 设置每次分页请求返回的数据个数
+const skip_num = 20
 Page({
     data: {
         recommandData: [],
+        renderSucc: false, // 数据是否加载完成
         head_title: [
             {
                 label: "推荐"
@@ -31,10 +34,7 @@ Page({
             {
                 label: "老歌"
             }
-        ],
-        isActive: 0,
-        left: "",
-        scrollLeft: null
+        ]
     },
     onLoad:async function (options) {
         // 1. 热门推荐的数据
@@ -42,36 +42,43 @@ Page({
             this.setData({
                 recommandData: data
             })
-            this.changLine()
         })
     },
-    // tab的点击事件
-    itemTap(event) {
-        const { currentTarget } = event
-        const currentIndex = currentTarget.dataset.currentindex
-        if (currentIndex >= 3) {
-            this.setData({
-                scrollLeft: (currentIndex - 2) * 60
-            })
-        }
-        else {
-            this.setData({
-                scrollLeft: 0
-            })
-        }
-        this.setData({
-            isActive: currentIndex
+    // 上拉刷新
+    onPullDownRefresh(options) {
+        this.page_updata(res => {
+            wx.stopPullDownRefresh()
         })
-        this.changLine()
     },
-    // tabs的下划线切换的动画效果
-    changLine() {
-        const query = wx.createSelectorQuery()
-        query.select(".active").boundingClientRect().exec(res => {
-            const { width } = res[0]
+    // 向下滑动加载
+    onReachBottom(options) {
+        if (this.data.renderSucc) return
+        this.page_skip.skip += skip_num 
+        this.page_updata()
+    },
+    page_updata(callback = res => { }) {
+        wx.showLoading({
+            title: '数据加载中',
+        })
+        db.collection("album").skip(this.page_skip.skip).get().then(({ data }) => {
+            if(data.length < skip_num) {
+                this.setData({
+                    renderSucc: true
+                })
+            }
             this.setData({
-                left: width * this.data.isActive
+                recommandData: this.data.recommandData.concat(data)
+            },res => {
+                wx.showToast({
+                    title: '数据加载完成',
+                })
+                // wx.hideLoading()
+                callback()
             })
         })
+    },
+    // 用于指定分页数据的加载
+    page_skip: {
+        skip: 0
     }
 })

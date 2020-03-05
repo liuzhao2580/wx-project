@@ -1,16 +1,12 @@
-// components/com-list/com-list.js
+// components/com-nolist/com-nolist.js
 Component({
     /**
      * 组件的属性列表
      */
     properties: {
-        recommandItem: {
-            value: [],
-            type: Array
-        },
-        renderSucc: {
-            value: false,
-            type: Boolean
+        nolistText: {
+            value: "没有更多数据啦",
+            type: String
         }
     },
 

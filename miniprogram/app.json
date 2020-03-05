@@ -25,6 +25,9 @@
             }
         ]
     },
+    "usingComponents": {
+        "com-nolist": "/components/com-nolist/com-nolist"
+    },
     "sitemapLocation": "sitemap.json",
     "style": "v2"
 }

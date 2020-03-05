@@ -2,7 +2,7 @@
     <block wx:for="{{recommandItem}}" wx:key="index">
         <view class="recommand-item">
             <view class="recommand-image">
-                <image src="{{item.album_image}}"></image>
+                <image src="{{item.album_image}}" lazy-load></image>
                 <view class="play-info">
                     <text class="iconfont icon-erji"></text>
                     <text>{{item.play_num}}</text>
@@ -14,3 +14,4 @@
         </view>
     </block>
 </view>
+<com-nolist wx:if="{{renderSucc}}"/>

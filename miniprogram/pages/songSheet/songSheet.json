@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-      "com-list": "/components/com-list/com-list"
-  }
+      "com-list": "/components/com-list/com-list",
+      "com-tabs": "./com-child/com-tabs"
+  },
+  "enablePullDownRefresh": true
 }

@@ -1,0 +1,10 @@
+.nolist-box {
+    height: 100rpx;
+    width: 100%;
+    border: 2rpx solid #eee;
+    border-radius: 5rpx;
+    color: #ff5333;
+    text-align: center;
+    line-height: 100rpx;
+    margin-bottom: 20rpx;
+}
