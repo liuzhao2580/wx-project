@@ -27,23 +27,38 @@ Page({
             },
             {
                 label: "民谣"
+            },
+            {
+                label: "老歌"
             }
         ],
         isActive: 0,
-        left: ""
+        left: "",
+        scrollLeft: null
     },
-    onLoad: function (options) {
-        // 2. 热门推荐的数据
-        db.collection("album").get().then(({ data }) => {
+    onLoad:async function (options) {
+        // 1. 热门推荐的数据
+        await db.collection("album").get().then(({ data }) => {
             this.setData({
                 recommandData: data
             })
             this.changLine()
         })
     },
+    // tab的点击事件
     itemTap(event) {
         const { currentTarget } = event
         const currentIndex = currentTarget.dataset.currentindex
+        if (currentIndex >= 3) {
+            this.setData({
+                scrollLeft: (currentIndex - 2) * 60
+            })
+        }
+        else {
+            this.setData({
+                scrollLeft: 0
+            })
+        }
         this.setData({
             isActive: currentIndex
         })
@@ -52,10 +67,10 @@ Page({
     // tabs的下划线切换的动画效果
     changLine() {
         const query = wx.createSelectorQuery()
-        query.select(".active").boundingClientRect()
-        query.exec(res => {
+        query.select(".active").boundingClientRect().exec(res => {
+            const { width } = res[0]
             this.setData({
-                left: res[0].left
+                left: width * this.data.isActive
             })
         })
     }

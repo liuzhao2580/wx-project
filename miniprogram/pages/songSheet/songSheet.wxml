@@ -1,6 +1,6 @@
 <!--pages/songSheet/songSheet.wxml-->
 <view class="songSheet-box">
-    <scroll-view scroll-x class="scroll-box">
+    <scroll-view scroll-x class="scroll-box" scroll-left="{{scrollLeft}}" scroll-with-animation>
         <view class="scroll-view">
             <block wx:for="{{head_title}}" wx:key="index">
                 <view class="{{index == isActive ? 'active' : ''}} scroll-item" data-currentindex="{{index}}" bind:tap="itemTap">

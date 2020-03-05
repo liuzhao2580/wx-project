@@ -12,6 +12,7 @@
     background-color: #fff;
     position: fixed;
     z-index: 99999;
+    border-bottom: 2rpx solid #eee;
 }
 .scroll-view {
     position: relative;
@@ -26,11 +27,13 @@
 }
 .active-line {
     position: absolute;
+    bottom: 0;
+    left: 0;
     width: 60rpx;
     height: 5rpx;
-    bottom: 0;
     background-color: #ff5333;
     transition: all 0.3s;
+    transform: translateX(50%);
 }
 .scroll-item.active{
     color: #ff5333;
