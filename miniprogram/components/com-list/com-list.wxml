@@ -1,6 +1,6 @@
 <view class="recommand-info">
     <block wx:for="{{recommandItem}}" wx:key="index">
-        <view class="recommand-item">
+        <view class="recommand-item" data-recommandinfo="{{item}}" bind:tap="recommandTap">
             <view class="recommand-image">
                 <image src="{{item.album_image}}" lazy-load></image>
                 <view class="play-info">

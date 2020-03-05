@@ -57,6 +57,20 @@
 					"pathName": "pages/songSheet/songSheet",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "歌单详情",
+					"pathName": "pages/sheetInfo/sheetInfo",
+					"query": "b37f9a3e-9c7b-4938-9135-5d0f1c2799a0",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/sheetInfo/sheetInfo",
+					"pathName": "pages/sheetInfo/sheetInfo",
+					"query": "id=b37f9a3e-9c7b-4938-9135-5d0f1c2799a0",
+					"scene": null
 				}
 			]
 		}

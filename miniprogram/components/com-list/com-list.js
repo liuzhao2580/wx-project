@@ -25,6 +25,13 @@ Component({
      * 组件的方法列表
      */
     methods: {
-
+        // 歌单点击事件
+        recommandTap(event) {
+            const {currentTarget} = event
+            const recommandInfo = currentTarget.dataset.recommandinfo
+            wx.navigateTo({
+                url: `/pages/sheetInfo/sheetInfo?id=${recommandInfo._id}`,
+            })
+        }
     }
 })
