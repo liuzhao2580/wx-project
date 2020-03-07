@@ -1,6 +1,11 @@
 /**app.wxss**/
-@import "./assets/iconfont/iconfont.wxss";
+@import "/assets/iconfont/iconfont.wxss";
 
-page > view {
-    padding: 0 20rpx;
+/* 设置只显示两列的文字 */
+.fontLine2 {
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
 }

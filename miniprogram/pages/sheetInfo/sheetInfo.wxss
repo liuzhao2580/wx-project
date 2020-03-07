@@ -1,1 +1,32 @@
-/* miniprogram/pages/sheetInfo/sheetInfo.wxss */
+.sheetInfo-box .sheetInfo-head{
+    padding-top: 40rpx;
+    display: flex;
+    justify-content: space-around;
+    background:linear-gradient(to bottom,#ff5333,#bfe6ba);
+    height: 420rpx;
+}
+.sheetInfo-head .head-image {
+    width: 35%;
+}
+.sheetInfo-head .head-introduct {
+    width: 55%;
+    color: #fff;
+}
+.head-introduct .title {
+    font-size: 36rpx;
+}
+.head-introduct .people {
+    /* margin: 30rpx 0; */
+    font-size: 30rpx;
+    width: 150rpx;
+    height: 100rpx;
+    line-height: 100rpx;
+    vertical-align: middle;
+}
+.people .iconfont {
+    font-size: 30rpx;
+}
+.head-introduct .introduct{
+    font-size: 26rpx;
+    color: #f3f3f3;
+}

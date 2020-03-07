@@ -11,26 +11,6 @@
     width: 30.3%;
     margin-bottom: 20rpx;
 }
-.recommand-item .recommand-image {
-    height: 320rpx;
-    position: relative
-}
-.recommand-image image {
-    width: 100%;
-    height: 100%;
-    border-radius: 10rpx;
-}
-.recommand-image .play-info {
-    font-size: 22rpx;
-    color: #fff;
-    position: absolute;
-    top: 5rpx;
-    right: 8rpx;
-    height: 50rpx;
-}
-.play-info text:first-of-type {
-    margin-right: 10rpx;
-}
 .recommand-item .recommand-text {
     font-size: 30rpx;
     overflow: hidden;

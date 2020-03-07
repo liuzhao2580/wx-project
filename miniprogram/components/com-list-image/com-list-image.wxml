@@ -1,0 +1,7 @@
+<view class="recommand-image">
+    <image src="{{item_image}}" lazy-load></image>
+    <view class="play-info">
+        <text class="iconfont icon-erji" />
+        <text>{{play_num}}</text>
+    </view>
+</view>

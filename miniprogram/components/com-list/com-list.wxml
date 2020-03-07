@@ -1,13 +1,7 @@
 <view class="recommand-info">
     <block wx:for="{{recommandItem}}" wx:key="index">
         <view class="recommand-item" data-recommandinfo="{{item}}" bind:tap="recommandTap">
-            <view class="recommand-image">
-                <image src="{{item.album_image}}" lazy-load></image>
-                <view class="play-info">
-                    <text class="iconfont icon-erji"></text>
-                    <text>{{item.play_num}}</text>
-                </view>
-            </view>
+            <com-list-image play_num="{{item.play_num}}" item_image="{{item.album_image}}"/>
             <view class="recommand-text">
                 <text>{{item.album_introduce}}</text>
             </view>

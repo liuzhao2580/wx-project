@@ -1,4 +1,6 @@
 {
     "component": true,
-    "usingComponents": {}
+    "usingComponents": {
+        "com-list-image": "/components/com-list-image/com-list-image"
+    }
 }

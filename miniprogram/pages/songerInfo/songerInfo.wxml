@@ -1,0 +1,17 @@
+<view class="songerInfo-box">
+    <view class="songer-head">
+        <!-- 歌手背景图 -->
+        <image class="head-background" src="{{image}}" lazy-load mode="widthFix"></image>
+        <!-- 歌手基本信息 -->
+        <view class="songer-basic">
+            <view class="basic-left">
+                <text></text>
+                <view></view>
+                <text></text>
+            </view>
+            <view class="basic-right"></view>
+        </view>
+        <!-- 歌手目前正在销售中的专辑 -->
+        <view class="sheet-self"></view>
+    </view>
+</view>
