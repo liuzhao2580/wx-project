@@ -1,21 +1,3 @@
 .songerInfo-box {
 
 }
-.songer-head {
-    height: 500rpx;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-.head-background {
-    width: 100%;
-    height: 100%;
-}
-.songer-head .songer-basic {
-    position: absolute;
-    bottom: 0;
-    height: 260rpx;
-    width: 100%;
-    padding: 0 10rpx;
-    background-color: #ff5333;
-}

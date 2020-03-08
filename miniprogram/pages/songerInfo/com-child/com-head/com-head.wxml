@@ -1,0 +1,50 @@
+<view class="songer-head">
+    <!-- 歌手背景图 -->
+    <image class="head-background" src="{{image}}" lazy-load mode="widthFix"></image>
+    <!-- 歌手基本信息 -->
+    <view class="songer-basic">
+        <view class="basic-box">
+            <view class="basic-left">
+                <view class="left-box">
+                    <view class="name">
+                        {{songerData.name}}
+                    </view>
+                    <wxs src="../../../../wxs/regionChange.wxs" module="regionChange" />
+                    <view class="ranking">
+                        {{regionChange.region(songerData.region)}} NO.{{songerData.ranking}}
+                    </view>
+                    <view class="fans">
+                        <text wx:if="{{songerData.is_Settled === '1'}}" class="follow">关注 {{songerData.follow_num}}</text>
+                        <text wx:if="{{songerData.is_Settled === '1'}}" class="line"></text>
+                        <text>粉丝 {{songerData.fans_num}}</text>
+                    </view>
+                    <view class="is_Settled" wx:if="{{songerData.is_Settled === '1'}}">入驻艺人</view>
+                </view>
+            </view>
+            <view class="basic-right">
+                <view class="right-box">
+                    <view class="follow" bind:tap="addFocus">
+                        <text class="iconfont icon-tianjia"></text> 关注
+                    </view>
+                    <view class="secret" bind:tap="sendSecret" wx:if="{{songerData.is_Settled === '1'}}">
+                        <text class="iconfont icon-ziyuan"></text> 发私信
+                    </view>
+                </view>
+            </view>
+        </view>
+        <!-- 歌手目前正在销售中的专辑 --> 
+        <view class="sheet-self" wx:if="{{songerData.hot_self_name}}" bind:tap="_selfSupport">
+            <view class="icon-box">
+                <text class="iconfont icon-changpian"></text>
+            </view>
+            <view class="self-introduce">
+                <text class="introduce-text fontLine1">数字专辑《{{songerData.hot_self_name}}》火热售卖中</text>
+                <text class="self-num">已售{{songerData.hot_self_num}}张</text>
+            </view>
+            <view class="support">
+                支持
+                <text class="iconfont icon-youjiantou"></text>
+            </view>
+        </view>
+    </view>
+</view>

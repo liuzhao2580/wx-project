@@ -1,6 +1,12 @@
 /**app.wxss**/
 @import "/assets/iconfont/iconfont.wxss";
 
+/* 设置只显示一列的文字 */
+.fontLine1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
 /* 设置只显示两列的文字 */
 .fontLine2 {
     overflow: hidden;

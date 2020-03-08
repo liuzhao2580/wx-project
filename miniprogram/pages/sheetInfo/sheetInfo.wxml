@@ -6,7 +6,7 @@
         </view>
         <view class="head-introduct">
             <view class="title fontLine2">{{sheetInfoData.album_introduce}}</view>
-            <view class="people" data-songer="{{sheetInfoData.songer}}" bind:tap="songerTap">
+            <view class="people" data-songer_id="{{sheetInfoData.songer_id}}" bind:tap="songerTap">
                 <text>{{sheetInfoData.songer}}</text>
                 <text class="iconfont icon-youjiantou"></text>
             </view>

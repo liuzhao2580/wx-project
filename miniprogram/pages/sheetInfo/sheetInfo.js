@@ -17,9 +17,9 @@ Page({
     // 歌手点击事件
     songerTap(e) {
         const { currentTarget } = e
-        const songer = currentTarget.dataset.songer
+        const songer_id = currentTarget.dataset.songer_id
         wx.navigateTo({
-            url: `/pages/songerInfo/songerInfo?name=${songer}`,
+            url: `/pages/songerInfo/songerInfo?songer_id=${songer_id}`,
         })
     }
 })

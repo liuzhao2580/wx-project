@@ -1,0 +1,31 @@
+var regionChange = function (regionCode = "CHI") {
+    var regionArray = [
+        {
+            label: "歌手榜华语地区",
+            code: "CHI"
+        },
+        {
+            label: "歌手榜欧美地区",
+            code: "USA"
+        },
+        {
+            label: "歌手榜韩国地区",
+            code: "KOR"
+        },
+        {
+            label: "歌手榜日本地区",
+            code: "JPA"
+        }
+    ]
+    var songer_label = null
+    for (var i = 0; i < regionArray.length; i++) {
+        if (regionArray[i].code === regionCode) {
+            songer_label = regionArray[i].label
+        }
+    }
+    return songer_label
+}
+
+module.exports = {
+    region:regionChange
+}

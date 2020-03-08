@@ -69,7 +69,7 @@
 					"id": 2,
 					"name": "歌手详情",
 					"pathName": "pages/songerInfo/songerInfo",
-					"query": "name=周杰伦",
+					"query": "songer_id=d224811c-c5cb-45b4-b5c9-48d4c96e16d7",
 					"scene": null
 				}
 			]

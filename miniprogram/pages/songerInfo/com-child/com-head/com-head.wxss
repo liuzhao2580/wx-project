@@ -1,0 +1,133 @@
+.songerInfo-box {
+
+}
+.songer-head {
+    height: 580rpx;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.head-background {
+    width: 100%;
+    height: 100%;
+}
+.songer-basic  {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.songer-head .basic-box{
+    height: 220rpx;
+    width: 100%;
+    padding: 0 10rpx;
+    display: flex;
+}
+.songer-basic .basic-left {
+    width: 60%;
+    position: relative;
+}
+.basic-left .left-box {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10rpx;
+    color: #8b8b8b;
+    font-size: 26rpx;
+    position: absolute;
+    bottom: 20rpx;
+}
+.basic-left .name {
+    font-size: 34rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    white-space: nowrap;
+}
+.basic-left .fans {
+    margin-top: 20rpx;
+}
+.basic-left .ranking {
+    margin-top: 20rpx;
+}
+.basic-left .fans text{
+    display: inline-block;
+}
+.fans .line {
+    padding: 0 !important;
+    width: 2rpx;
+    height: 100%;
+    background-color: #eee;
+    margin: 0 40rpx;
+    vertical-align: bottom;
+}
+.basic-left .is_Settled {
+    margin-top: 20rpx;
+}
+.songer-basic .basic-right {
+    width: 40%;
+    color: #fff;
+    position: relative;
+}
+.basic-right .right-box {
+    position: absolute;
+    width: 90%;
+    bottom: 40rpx;
+    display: flex;
+    justify-content: flex-end;
+}
+.basic-right .follow {
+    margin-right: 10rpx;
+    background-color: #ff5333;
+}
+.basic-right .follow,
+.basic-right .secret {
+    font-size: 22rpx;
+    border: 1rpx solid transparent;
+    border-radius: 40rpx;
+    padding: 10rpx 20rpx;
+}
+.basic-right .follow .iconfont,
+.basic-right .secret .iconfont {
+    font-size: 22rpx;
+}
+.basic-right .secret {
+    background-color: #c5c5c5;
+}
+.songer-head .sheet-self {
+    width: 100%;
+    height: 100rpx;
+    background-color: #f3f3f3; opacity: 0.6;
+    display: flex;
+    border-top-left-radius: 40rpx;
+    border-top-right-radius: 40rpx;
+}
+.sheet-self .icon-box {
+    width: 15%;
+    text-align: center;
+    line-height: 100rpx;
+}
+.icon-box .iconfont {
+    font-size: 40rpx;
+    color: #ff5333;
+}
+.sheet-self .self-introduce {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.self-introduce .introduce-text {
+    font-size: 30rpx;
+}
+.self-introduce .self-num {
+    font-size: 25rpx;
+    color: #8b8b8b;
+}
+.sheet-self .support {
+    width: 20%;
+    line-height: 100rpx;
+    font-size: 30rpx;
+    color: #8b8b8b;
+}
+.support .iconfont{
+    font-size: 30rpx;
+}

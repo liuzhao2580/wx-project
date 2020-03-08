@@ -5,10 +5,10 @@ Page({
         songerData: [],
         image: null
     },
-    onLoad:function (options) {
-        const {name} = options
-        db.collection("songer_info").where({
-            name
+    onLoad:async function (options) {
+        const { songer_id} = options
+        await db.collection("songer_info").where({
+            _id: songer_id
         }).get().then(({data}) => {
             this.setData({
                 songerData: data[0]
@@ -22,5 +22,5 @@ Page({
         this.setData({
             image
         })
-    }   
+    }
 })
