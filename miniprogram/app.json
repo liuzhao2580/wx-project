@@ -4,7 +4,10 @@
         "pages/tabbar/personal/personal",
         "pages/songSheet/songSheet",
         "pages/sheetInfo/sheetInfo",
-        "pages/songerInfo/songerInfo"
+        "pages/songerInfo/songerInfo",
+        "pages/recommand/recommand",
+        "pages/rankingList/rankingList",
+        "pages/tabbar/home/components/com-song/com-song"
     ],
     "window": {
         "backgroundColor": "#ffffff",

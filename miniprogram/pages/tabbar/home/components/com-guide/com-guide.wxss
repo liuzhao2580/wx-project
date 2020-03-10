@@ -1,0 +1,19 @@
+.guide-box {
+    display: flex;
+    justify-content: space-around;
+    height: 120rpx;
+    margin-bottom: 20rpx;
+}
+.guide-box .guide-item {
+    flex: 1;
+    text-align: center;
+    padding-top: 20rpx;
+    height: 100%;
+}
+.guide-item .guide-image{
+    width: 64rpx;
+    height: 64rpx;
+}
+.guide-item .guide-text {
+    font-size: 28rpx;
+}

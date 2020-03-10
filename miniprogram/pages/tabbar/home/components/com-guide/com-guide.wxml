@@ -1,0 +1,8 @@
+<view class="guide-box">
+    <block wx:for="{{guideList}}" wx:key="index">
+        <navigator url="{{item.url}}" class="guide-item">
+            <image src="{{item.image}}" class="guide-image" mode="widthFix" />
+            <view class="guide-text">{{item.label}}</view>
+        </navigator>
+    </block>
+</view>

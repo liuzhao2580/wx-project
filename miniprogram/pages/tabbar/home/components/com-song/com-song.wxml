@@ -1,0 +1,26 @@
+<view class="recommend-song">
+    <view class="recommend-content">
+        <view class="box-head">
+            <view class="songer-name">周杰伦</view>
+            <navigator url="/pages/songerInfo/songerInfo?id={{}}" class="more">查看更多</navigator>
+        </view>
+        <view class="box-content">
+            <swiper class="swiper-box" next-margin="20rpx">
+                <block wx:for="{{2}}" wx:key="index">
+                    <swiper-item class="swiper-item">
+                        <block wx:for="{{insideLoop}}" wx:for-item="inside" wx:for-index="inx" wx:key="inx">
+                            <view class="content-item">
+                                <image src="{{songer_recommend[index * insideLoop + inx].album_image}}" class="item-image" />
+                                <view class="song">
+                                    <view class="song_name">{{songer_recommend[index * insideLoop + inx].song_name}}</view>
+                                    <view class="songer_name">{{songer_recommend[index * insideLoop + inx].songer_name}}</view>
+                                </view>
+                                <view class="iconfont icon-icon-"></view>
+                            </view>
+                        </block>
+                    </swiper-item>
+                </block>
+            </swiper>
+        </view>
+    </view>
+</view>

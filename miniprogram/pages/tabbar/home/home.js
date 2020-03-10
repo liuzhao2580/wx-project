@@ -3,7 +3,10 @@ const db = wx.cloud.database()
 Page({
     data: {
         bannerData: [],
-        recommandData: []
+        recommandData: [],
+        songer_recommend: [],
+        swiperTimes: 0,
+        insideLoop: 3
     },
     onLoad: function (options) {
         // 1.轮播图的数据
@@ -13,9 +16,16 @@ Page({
             })
         })
         // 2. 热门推荐的数据
-        db.collection("album").limit(7).get().then(({data}) => {
+        db.collection("album").limit(6).get().then(({data}) => {
             this.setData({
                 recommandData: data
+            })
+        })
+        // 3.歌手歌曲推荐数据
+        db.collection("song").get().then(({data}) => {
+            this.setData({
+                songer_recommend: data,
+                swiperTimes: Math.ceil(5/3)
             })
         })
     }

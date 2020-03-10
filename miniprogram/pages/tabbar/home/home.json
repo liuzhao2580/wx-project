@@ -1,7 +1,8 @@
 {
   "usingComponents": {
       "com-swiper": "/components/com-swiper/com-swiper",
-      "com-list": "/components/com-list/com-list"
+      "com-list": "/components/com-list/com-list",
+      "com-guide": "./components/com-guide/com-guide"
   },
   "navigationBarTitleText": "首页",
   "enablePullDownRefresh": true
