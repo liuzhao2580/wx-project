@@ -1,0 +1,31 @@
+.userInfo-box {
+    padding: 20rpx 0;
+}
+.userset-box .userInfo-box>view {
+    width: 120rpx;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.userInfo-box image{
+    height: 120rpx;
+    width: 120rpx;
+    border-radius: 50%;
+    margin-bottom: 10rpx;
+}
+.operation-box {
+    margin-top: 20rpx;
+    border-top: 1rpx solid #ddd;
+}
+.operation-box .operation-item {
+    height: 70rpx;
+    line-height: 70rpx;
+    border-bottom: 1rpx solid #ddd;
+    padding: 0 10rpx;
+    font-size: 24rpx;
+    display: flex;
+    color: #555;
+    justify-content: space-between;
+}

@@ -1,5 +1,6 @@
 <view class="recommand-image">
-    <image src="{{item_image}}" lazy-load></image>
+    <!-- <image src="{{item_image}}" lazy-load></image> -->
+    <com-image-load realImg="{{item_image}}" IS_rander="{{IS_rander}}"></com-image-load>
     <view class="play-info">
         <text class="iconfont icon-erji" />
         <text>{{play_num}}</text>

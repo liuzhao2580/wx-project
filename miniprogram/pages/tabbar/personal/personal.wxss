@@ -1,1 +1,4 @@
-/* miniprogram/pages/tabbar/personal/personal.wxss */
+.personal-box {
+    height: 100vh;
+    width: 100vw;
+}

@@ -4,6 +4,6 @@
     <com-tabs head_title="{{head_title}}"/>
     <!-- 歌单数据 -->
     <view class="recommand-info">
-        <com-list recommandItem="{{recommandData}}" renderSucc="{{renderSucc}}"/>
+        <com-list recommandItem="{{recommandData}}" renderSucc="{{renderSucc}}" IS_rander="{{IS_rander}}"/>
     </view>
 </view>

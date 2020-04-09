@@ -11,6 +11,10 @@ Component({
         item_image: {
             value: "",
             type: String
+        },
+        IS_rander: {
+            value: false,
+            type: Boolean
         }
     },
     options: {

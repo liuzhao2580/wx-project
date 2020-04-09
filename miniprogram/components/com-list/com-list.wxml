@@ -1,7 +1,7 @@
 <view class="recommand-info">
     <block wx:for="{{recommandItem}}" wx:key="index">
         <view class="recommand-item" data-recommandinfo="{{item}}" bind:tap="recommandTap">
-            <com-list-image play_num="{{item.play_num}}" item_image="{{item.album_image}}"/>
+            <com-list-image play_num="{{item.play_num}}" item_image="{{item.album_image}}" IS_rander="{{IS_rander}}"/>
             <view class="recommand-text">
                 <text>{{item.album_introduce}}</text>
             </view>

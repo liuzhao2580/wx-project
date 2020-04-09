@@ -7,7 +7,9 @@
         "pages/songerInfo/songerInfo",
         "pages/recommand/recommand",
         "pages/rankingList/rankingList",
-        "pages/tabbar/home/components/com-song/com-song"
+        "pages/tabbar/home/components/com-song/com-song",
+        "pages/tabbar/shopcar/shopcar",
+        "pages/userSet/userSet"
     ],
     "window": {
         "backgroundColor": "#ffffff",
@@ -21,6 +23,12 @@
                 "text": "首页",
                 "iconPath": "/assets/images/tabbar/home.png",
                 "selectedIconPath": "/assets/images/tabbar/home-active.png"
+            },
+            {
+                "pagePath": "pages/tabbar/shopcar/shopcar",
+                "text": "购物车",
+                "iconPath": "/assets/images/tabbar/shopcar.png",
+                "selectedIconPath": "/assets/images/tabbar/shopcar-active.png"
             },
             {
                 "pagePath": "pages/tabbar/personal/personal",

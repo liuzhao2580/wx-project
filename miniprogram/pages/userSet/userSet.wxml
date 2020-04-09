@@ -1,0 +1,18 @@
+<view class="userset-box">
+    <!-- 用户信息 -->
+    <view class="userInfo-box">
+        <view>
+            <image src="{{userInfo.avatarUrl}}"></image>
+            <text>{{userInfo.nickName}}</text>
+        </view>
+    </view>
+    <!-- 操作 -->
+    <view class="operation-box">
+        <block wx:for="{{operationArr}}" wx:key="index">
+            <view class="operation-item" data-title="{{item.title}}" bind:tap="operationTap">
+                <text>{{item.title}}</text>
+                <text class="iconfont icon-youjiantou"></text>
+            </view>
+        </block>
+    </view>
+</view>

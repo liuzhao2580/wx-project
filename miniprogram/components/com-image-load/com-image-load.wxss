@@ -1,0 +1,5 @@
+/* components/com-image-load/com-image-load.wxss */
+.com-image-load {
+    height: 100%;
+    width: 100%;
+}

@@ -34,13 +34,15 @@ Page({
             {
                 label: "老歌"
             }
-        ]
+        ],
+        IS_rander: false
     },
     onLoad:async function (options) {
         // 1. 热门推荐的数据
         await db.collection("album").get().then(({ data }) => {
             this.setData({
-                recommandData: data
+                recommandData: data,
+                IS_rander: true
             })
         })
     },

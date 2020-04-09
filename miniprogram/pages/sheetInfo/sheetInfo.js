@@ -2,7 +2,8 @@
 const db = wx.cloud.database()
 Page({
     data: {
-        sheetInfoData: []
+        sheetInfoData: [],
+        IS_rander: false
     },
     onLoad: function (options) {
         const {id} = options
@@ -10,7 +11,8 @@ Page({
             "_id": id
         }).get().then(({data}) => {
             this.setData({
-                sheetInfoData: data[0]
+                sheetInfoData: data[0],
+                IS_rander: true
             })
         })
     },

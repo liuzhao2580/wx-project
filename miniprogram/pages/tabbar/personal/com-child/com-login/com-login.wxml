@@ -1,0 +1,11 @@
+<view class="login-box">
+    <!-- 1. 用户登录按钮 -->
+    <button wx:if="{{!isLogin}}" class="loginBtn" open-type="getUserInfo" bindgetuserinfo="loginBtn" size="mini">登录</button>
+    <!-- 2. 用户基本信息 -->
+    <view class="userInfo-box" wx:else>
+        <view bind:tap="userTap">
+            <image src="{{userInfo.avatarUrl}}"></image>
+            <text>{{userInfo.nickName}}</text>
+        </view>
+    </view>
+</view>

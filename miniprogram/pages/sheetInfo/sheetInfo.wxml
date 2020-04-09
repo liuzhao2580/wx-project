@@ -2,7 +2,7 @@
     <!-- 歌单基本信息 -->
     <view class="sheetInfo-head">
         <view class="head-image">
-            <com-list-image play_num="{{sheetInfoData.play_num}}" item_image="{{sheetInfoData.album_image}}"/>
+            <com-list-image play_num="{{sheetInfoData.play_num}}" item_image="{{sheetInfoData.album_image}}" IS_rander="{{IS_rander}}"/>
         </view>
         <view class="head-introduct">
             <view class="title fontLine2">{{sheetInfoData.album_introduce}}</view>

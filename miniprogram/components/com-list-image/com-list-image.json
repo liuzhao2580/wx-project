@@ -1,4 +1,6 @@
 {
     "component": true,
-    "usingComponents": {}
+    "usingComponents": {
+        "com-image-load": "/components/com-image-load/com-image-load"
+    }
 }

@@ -11,6 +11,10 @@ Component({
         renderSucc: {
             value: false,
             type: Boolean
+        },
+        IS_rander: {
+            value: false,
+            type: Boolean
         }
     },
     /**

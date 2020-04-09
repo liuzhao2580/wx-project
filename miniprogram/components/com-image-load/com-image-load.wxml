@@ -1,0 +1,4 @@
+<!-- 在网络图片加载完成之前，显示默认的图片组件 -->
+<view class="com-image-load">
+    <image src="{{ imageRander ? realImg :'/assets/images/loading.gif'}}" bindload="imageLoad"></image>
+</view>

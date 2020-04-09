@@ -71,6 +71,19 @@
 					"pathName": "pages/songerInfo/songerInfo",
 					"query": "songer_id=d224811c-c5cb-45b4-b5c9-48d4c96e16d7",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人中心",
+					"pathName": "pages/tabbar/personal/personal",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "用户设置",
+					"pathName": "pages/userSet/userSet",
+					"scene": null
 				}
 			]
 		}

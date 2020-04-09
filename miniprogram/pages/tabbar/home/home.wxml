@@ -12,7 +12,7 @@
                 查看更多
             </navigator>
         </view>
-        <com-list recommandItem="{{recommandData}}" />
+        <com-list recommandItem="{{recommandData}}" IS_rander="{{IS_rander}}"/>
     </view>
     <!-- 4.歌手推荐的歌曲 -->
     <view class="recommend-song">
