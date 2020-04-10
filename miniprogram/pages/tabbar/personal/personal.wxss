@@ -1,4 +1,29 @@
 .personal-box {
     height: 100vh;
     width: 100vw;
+    background-color: rgb(245, 244, 244)
+}
+.operation-box {
+    margin: 20rpx;
+}
+.operation-box .operation-item {
+    background-color: #fff;
+    margin-bottom: 20rpx;
+    border-radius: 20rpx;
+    padding: 20rpx;
+}
+.operation-item .item-title {
+    font-size: 32rpx;
+}
+.operation-item .item-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.item-content .arrayItem{
+    width: 25%;
+}
+.arrayItem image {
+    width: 80rpx;
+    height: 80rpx;
 }

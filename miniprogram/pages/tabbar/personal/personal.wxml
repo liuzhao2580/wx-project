@@ -1,4 +1,18 @@
 <view class="personal-box">
     <!-- 用户信息 -->
     <com-login />
+    <!-- 功能菜单 -->
+    <view class="operation-box">
+        <view class="operation-item" wx:for="{{operationArray}}" wx:key="index">
+            <view class="item-title">{{item.title}}</view>
+            <view class="item-content">
+                <block wx:for="{{item.array}}" wx:key="index" wx:for-item="arrayItem">
+                    <view class="arrayItem">
+                        <image src="{{arrayItem.src}}"></image>
+                        <text>{{arrayItem.title}}</text>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
 </view>
